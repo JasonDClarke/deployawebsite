@@ -1,0 +1,10 @@
+<%include partials/header%> 
+
+<h1> Edit blog!</h1>
+<form action="/blogs/<%=blog._id%>?_method=PUT" method="POST">
+    <input name="title" type="text" value="<%=blog.title%>"></input>
+    <Button>Submit</Button>
+</form>
+
+
+<%include partials/footer%>

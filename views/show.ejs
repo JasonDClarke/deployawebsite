@@ -1,0 +1,13 @@
+<%include partials/header%> 
+
+<h1> Show Blog!</h1>
+<%=blog.title%>
+<a href="/blogs/<%=blog._id%>/edit">Update Blog</a>
+
+<a href="/blogs">Back</a>
+
+<form method="POST" action="/blogs/<%=blog._id%>?_method=DELETE">
+    <button type="submit">Delete</button>
+</form>
+
+<%include partials/footer%>
